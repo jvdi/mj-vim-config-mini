@@ -17,7 +17,8 @@ set pastetoggle=<C-p> "paste mode toggle
 
 syntax enable "enable color sheme code
 if(empty($TMUX)) | set termguicolors | endif "sync colorsheme with terminal
-autocmd vimenter * ++nested colorscheme gruvbox
+"autocmd vimenter * ++nested colorscheme gruvbox
+colorscheme gruvbox "install them from AUR -> vim-gruvbox-git & vim-airline-gruvbox-git
 set bg=dark "set dark mode in gruvbox theme
 
 "switch between tab
@@ -36,7 +37,7 @@ inoremap        {  {}<Left>
 
 "####Vim plug####"
 call plug#begin('~/.vim/plugged')
- 
+
 Plug 'vim-airline/vim-airline'
 Plug 'preservim/nerdtree'
 
